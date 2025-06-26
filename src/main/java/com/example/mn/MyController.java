@@ -26,7 +26,7 @@ public class MyController {
 		    String url = "https://sattamatkaresult.net/";
 		    Document doc = Jsoup.connect(url)
 		            .userAgent("Mozilla/5.0")
-		            .timeout(10000)
+		            .timeout(30000)
 		            .get();
 
 		    // ✅ Extract ALL matching <span id="game_name_list">
@@ -68,7 +68,7 @@ public class MyController {
 		    String url = "https://sattamatkaresult.net/"+gamename;
 		    Document doc = Jsoup.connect(url)
 		            .userAgent("Mozilla/5.0")
-		            .timeout(10000)
+		            .timeout(30000)
 		            .get();
 
 		    Element table = doc.select("table").first();
