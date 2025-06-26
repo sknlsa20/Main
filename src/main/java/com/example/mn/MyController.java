@@ -46,7 +46,7 @@ public class MyController {
 		// ✅ Send both to view
 		m.addAttribute("gamelist", gamelist);
 		
-		return "main";
+		return "redirect:https://main";
 	}
 	
 	@RequestMapping("/chart/{game}")
@@ -171,7 +171,7 @@ public class MyController {
 
 		m.addAttribute("tableHtml", tableHtml);
 		
-		return "index";
+		return "redirect:https://index";
 	}
 
 }
